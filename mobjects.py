@@ -49,5 +49,5 @@ class ShapesStyle(Scene):
         square.set_fill(color=YELLOW, opacity=0.5)
         circle.set_stroke(PINK, width=20)
 
-        self.add(circle, star, square)
+        self.add(star, square, circle)
         self.wait(1)
