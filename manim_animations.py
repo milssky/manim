@@ -1,5 +1,6 @@
 from manim import *
 
+
 class ShapeAnimation(Scene):
     def construct(self):
         square = Square()

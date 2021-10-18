@@ -1,5 +1,6 @@
 from manim import *
 
+
 class CreatingMObjects(Scene):
     def construct(self):
         star = Star()
@@ -31,7 +32,8 @@ class ShapesPlacement(Scene):
 
         star.move_to(LEFT * 2)  # сдвинуть звезду на две единицы влево
         square.next_to(star, LEFT)  # поставить квадрат слева от звезды
-        circle.align_to(star, LEFT)  # выровнять левую границу круга с левой границей звезды
+        # выровнять левую границу круга с левой границей звезды
+        circle.align_to(star, LEFT)
 
         self.add(star, square, circle)
         self.wait(1)
@@ -49,4 +51,3 @@ class ShapesStyle(Scene):
 
         self.add(circle, star, square)
         self.wait(1)
-            
